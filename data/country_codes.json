@@ -1,0 +1,58 @@
+{
+    "world": { "name_jp": "地球", "code": "1W" },
+    "earth": { "name_jp": "地球", "code": "1W" },
+    "地球": { "name_jp": "地球", "code": "1W" },
+
+    "argentina": { "name_jp": "アルゼンチン", "code": "AR" },
+    "アルゼンチン": { "name_jp": "アルゼンチン", "code": "AR" },
+
+    "australia": { "name_jp": "オーストラリア", "code": "AU" },
+    "オーストラリア": { "name_jp": "オーストラリア", "code": "AU" },
+
+    "brazil": { "name_jp": "ブラジル", "code": "BR" },
+    "ブラジル": { "name_jp": "ブラジル", "code": "BR" },
+
+    "canada": { "name_jp": "カナダ", "code": "CA" },
+    "カナダ": { "name_jp": "カナダ", "code": "CA" },
+
+    "china": { "name_jp": "中国", "code": "CN" },
+    "中国": { "name_jp": "中国", "code": "CN" },
+
+    "france": { "name_jp": "フランス", "code": "FR" },
+    "フランス": { "name_jp": "フランス", "code": "FR" },
+
+    "germany": { "name_jp": "ドイツ", "code": "DE" },
+    "ドイツ": { "name_jp": "ドイツ", "code": "DE" },
+
+    "india": { "name_jp": "インド", "code": "IN" },
+    "インド": { "name_jp": "インド", "code": "IN" },
+
+    "italy": { "name_jp": "イタリア", "code": "IT" },
+    "イタリア": { "name_jp": "イタリア", "code": "IT" },
+
+    "japan": { "name_jp": "日本", "code": "JP" },
+    "日本": { "name_jp": "日本", "code": "JP" },
+
+    "mexico": { "name_jp": "メキシコ", "code": "MX" },
+    "メキシコ": { "name_jp": "メキシコ", "code": "MX" },
+
+    "russia": { "name_jp": "ロシア", "code": "RU" },
+    "ロシア": { "name_jp": "ロシア", "code": "RU" },
+
+    "south africa": { "name_jp": "南アフリカ", "code": "ZA" },
+    "南アフリカ": { "name_jp": "南アフリカ", "code": "ZA" },
+
+    "spain": { "name_jp": "スペイン", "code": "ES" },
+    "スペイン": { "name_jp": "スペイン", "code": "ES" },
+
+    "united kingdom": { "name_jp": "イギリス", "code": "GBR" },
+    "uk": { "name_jp": "イギリス", "code": "GBR" },
+    "great britain": { "name_jp": "イギリス", "code": "GBR" },
+    "イギリス": { "name_jp": "イギリス", "code": "GBR" },
+    "英国": { "name_jp": "イギリス", "code": "GBR" },
+
+    "united states": { "name_jp": "アメリカ合衆国", "code": "US" },
+    "usa": { "name_jp": "アメリカ合衆国", "code": "US" },
+    "アメリカ": { "name_jp": "アメリカ合衆国", "code": "US" },
+    "米国": { "name_jp": "アメリカ合衆国", "code": "US" }
+}

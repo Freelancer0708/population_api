@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国の人口検索</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>国の人口検索</h1>
+        <input type="text" id="countryInput" placeholder="国名を入力 (例: 日本, アメリカ, China)">
+        <button onclick="searchPopulation()">検索</button>
+        <p id="result"></p>
+
+        <h2>世界の人口との割合</h2>
+        <canvas id="populationChart"></canvas>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
