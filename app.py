@@ -1,8 +1,21 @@
 from flask import Flask, request, jsonify, render_template
+from flask_httpauth import HTTPBasicAuth
 import requests
 import json
+import os
 
 app = Flask(__name__)
+auth = HTTPBasicAuth()
+
+# 環境変数からユーザー名とパスワードを取得
+USERNAME = os.getenv("BASIC_AUTH_USER")
+PASSWORD = os.getenv("BASIC_AUTH_PASS")
+
+@auth.verify_password
+def verify_password(username, password):
+    if username == USERNAME and password == PASSWORD:
+        return username
+    return None
 
 # 国名の辞書（英語 ⇔ 日本語 ⇔ 国コード）
 with open("data/country_codes.json", "r", encoding="utf-8") as f:
@@ -37,18 +50,18 @@ def get_world_population():
     return None
 
 @app.route("/")
+@auth.login_required
 def index():
     return render_template("index.html")
 
 @app.route("/api/population", methods=["GET"])
+@auth.login_required
 def get_population():
     country_name = request.args.get("country")
     if not country_name:
         return jsonify({"error": "国名を入力してください"}), 400
 
-    # 英語・日本語の両方に対応
     country_data = country_dict.get(country_name.lower()) or country_dict.get(country_name)
-
     if not country_data:
         return jsonify({"error": "国のデータが見つかりません"}), 404
 
@@ -61,6 +74,7 @@ def get_population():
         return jsonify({"error": "人口データが取得できませんでした"}), 500
 
 @app.route("/api/world_population", methods=["GET"])
+@auth.login_required
 def get_world_population_api():
     """ フロントエンド用に世界人口を返すAPI """
     world_population = get_world_population()
